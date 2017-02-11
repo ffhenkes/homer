@@ -1,0 +1,48 @@
+* Homer
+
+“Of all creatures that breathe and move upon the earth, nothing is bred that is weaker than man.” - Homer, The Odyssey
+
+** Purpose
+
+This project purpose is to implement a distributed Continuous Delivery system that provides a simple configuration, with a light execution environment.
+
+It works more as a workflow and relies only in the operational system capabilities to acomplishes its tasks, along with a message queue system and nosql database.
+
+** Requirements
+
+- [[https://www.gnu.org][GNU Make]]
+- [[http://golang.org][Golang]]
+- [[http://nsq.io][NSQ]]
+- [[http://mongodb.org][MongoDB]]
+- [[http://docker.com][Docker]]
+
+** Build
+
+#+BEGIN_EXAMPLE
+make build
+#+END_EXAMPLE
+
+** Test
+
+#+BEGIN_EXAMPLE
+make test
+#+END_EXAMPLE
+
+** Run
+
+#+BEGIN_EXAMPLE
+make run
+#+END_EXAMPLE
+
+** Ship
+
+#+BEGIN_EXAMPLE
+make ship
+#+END_EXAMPLE
+
+
+** Docs
+
+#+BEGIN_EXAMPLE
+make doc
+#+END_EXAMPLE
