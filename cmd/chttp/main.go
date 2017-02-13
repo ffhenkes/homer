@@ -20,7 +20,7 @@ func main() {
 	var mongoAddr = os.Getenv("HOMER_MONGODB_ADDRESS")
 
 	// Instantiate a new router
-	nr := httprouter.New()
+	r := httprouter.New()
 
 	nr := routes.NewRouter(
 		getSession(mongoAddr),
@@ -68,15 +68,15 @@ func main() {
 
 	r.DELETE("/quests", nr.RemoveAllQuests)
 
-	log.Info("Running on %s", addr)
+	logH.Info("Running on %s", addr)
 
 	if err := http.ListenAndServe(addr, r); err != nil {
-		log.Fatal("ListenAndServe: %s", err)
+		logH.Fatal("ListenAndServe: %s", err)
 	}
 
 }
 
-func getSession(mongoURI string) *mgo.Session {
+func getSession(mongoAddr string) *mgo.Session {
 	session, err := mgo.Dial(mongoAddr)
 	feedback.FailOnError(err, "Failed to connect to MongoDB!")
 	return session

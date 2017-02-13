@@ -7,7 +7,7 @@ import (
 	"github.com/julienschmidt/httprouter"
 )
 
-// Creates a new odyssey
+// Creates a new quest
 func (router *Router) CreateQuest(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// TODO only a stub
@@ -18,8 +18,8 @@ func (router *Router) CreateQuest(w http.ResponseWriter, r *http.Request, p http
 	fmt.Fprintf(w, "%s", "stub")
 }
 
-// Get all  odysseys
-func (router *Router) GetAllQuest(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+// Get all quests
+func (router *Router) GetAllQuests(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// TODO only a stub
 
@@ -29,7 +29,7 @@ func (router *Router) GetAllQuest(w http.ResponseWriter, r *http.Request, p http
 	fmt.Fprintf(w, "%s", "stub")
 }
 
-// Get an odyssey by id
+// Get a quest by id
 func (router *Router) GetQuest(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// TODO only a stub
@@ -40,7 +40,7 @@ func (router *Router) GetQuest(w http.ResponseWriter, r *http.Request, p httprou
 	fmt.Fprintf(w, "%s", "stub")
 }
 
-// Updates partially an odyssey
+// Updates partially a quest
 func (router *Router) PatchQuest(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// TODO only a stub
@@ -51,8 +51,8 @@ func (router *Router) PatchQuest(w http.ResponseWriter, r *http.Request, p httpr
 	fmt.Fprintf(w, "%s", "stub")
 }
 
-// Removes all odysseys
-func (router *Router) RemoveAllQuest(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+// Removes all quests
+func (router *Router) RemoveAllQuests(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// TODO only a stub
 
@@ -62,7 +62,7 @@ func (router *Router) RemoveAllQuest(w http.ResponseWriter, r *http.Request, p h
 	fmt.Fprintf(w, "%s", "stub")
 }
 
-// Removes one odyssey
+// Removes one quest
 func (router *Router) RemoveQuest(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 
 	// TODO only a stub
